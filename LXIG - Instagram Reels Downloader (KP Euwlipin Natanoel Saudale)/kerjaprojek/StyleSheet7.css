@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat";
+}
+
+body{
+    min-height: 100vh;
+    background: url(backke3.png) fixed;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(119, 119, 119);
+}
+.logo{
+    width: 100px;
+    cursor: default;
+}
+.navbar a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: plum;
+}
+.downloadsection{
+    margin: 10% auto 0 ;
+    text-align: center;
+}
+.downloadsection h1{
+    font-size: 40px;
+    font-weight: 650;
+    color: #fff;
+}
+.downloadsection form{
+    width: 90%;
+    max-width: 500px;
+    height: 40px;
+    background: #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.downloadsection input{
+    flex: 1;
+    height: 40px;
+    padding: 20px 20px;
+    font-size: 16px;
+    outline: 0;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.buttonsearch-container{
+    color: #fff;
+    padding: 0;
+    border: 1px solid blue;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: blue;
+}
+.buttonsearch-container button{
+    height: 40px;
+    width: 80px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background: blue;
+    font-size: 13px;
+}
+.buttondownload-container button{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background: blue;
+    font-size: 13px;
+}
+.buttondownload-container{
+    height: 40px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: blue;
+    transition: all 0.2s ease;
+}
+.buttondownload-container:active{
+    transform: scale(0.96);
+}
+.resultbox{
+    height: auto;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 10px 20%;
+    border-radius: 5px;
+    padding: 30px;
+}
+.videopreview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 250px; /* Lebar kotak */
+    height: 320px; /* Tinggi kotak */
+    background-color: #fff; /* Warna latar belakang (biru) */
+    border-radius: 10px; /* Sudut bulat */
+    padding: 20px 0; /* Ruang di dalam kotak */
+    color: #fff; /* Warna teks (putih) */
+}
+.howtousebox{
+    height: auto;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 10px 20%;
+    border-radius: 5px;
+    padding: 30px;
+}
+.aboutbox{
+    height: auto;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 10px 20%;
+    border-radius: 5px;
+    padding: 30px;
+}
+.feedbackbox{
+    height: auto;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 10px 20%;
+    border-radius: 5px;
+    padding: 30px;
+}
+.howtousebox h3, .aboutbox h3, .feedbackbox h3{
+    margin-bottom: 7px;
+}
+.feedbackform form{
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+    background: #fff;
+    margin: 0;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.feedbackbox input{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 5px;
+    background: #fff;
+}
+.feedbackbox textarea{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 5px;
+    resize: none;
+}
+.buttonsubmit{
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: blue;
+    transition: all 0.2s ease;
+}
+.buttonsubmit:active{
+    transform: scale(0.98);
+}
+.advertisement{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
